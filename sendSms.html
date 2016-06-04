@@ -1,0 +1,16 @@
+<html>
+<body>
+	<?php
+	 
+	$smsstring = $caps['xhtml_ui']['xhtml_send_sms_string'];
+	 
+	?>
+	 
+	<?php if ( $smsstring != 'none' ) : ?>
+	 
+	<p><a href="<?php echo $smsstring; ?>1234567?body=The Quick Brown
+	Fox">Click Here</a>.</p>
+	 
+	<?php endif; ?>
+	</body>
+</html>
