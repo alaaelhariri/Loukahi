@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html dir ="rtl"lang="en">
+<head>
+    <title>Testing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style=“backgroung-image:url(“https://encrypted-tbn1.gstatic.com/images?q =tbn:ANd9GcTTBttGVFA5jlNSig60J1hfXBGV1znLTf7lzLqxkpMgi78fbB6EYA”);”>
+
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <a class="account"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+
+
+                    <div class="submenu">
+                        <ul class="root">
+                            <li><a href="#Dashboard">Note1</a></li>
+                            <li><a href="#Profile">Note2</a></li>
+                            <li><a href="#settings">Note3</a></li>
+                            <li><a href="#feedback">Note3</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+        </ul>
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">اتصال</a></li>
+            <li><a href="#">معلومات</a></li>
+            <li><a href="#">الصفحة الرئيسية</a></li>
+            <li><a href="#">عنوان</a></li>
+        </ul>
+        </div>
+
+    </nav>
+
+    <div class="container">
+
+    </div>
+
+    <ul class="nav nav-tabs nav-justified">
+        <li><a data-toggle="tab" href=“#1”>أنا طبيب</a></li>
+        <li class=“active”><a data-toggle="tab" href=“#2”>أنا مستخدم</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="#1" class="tab-pane fade in active">
+            <div style="position: relative">
+               <h4>صفحة المستخدم </h4>
+            </div>
+            </br>
+            </br>
+           <p>ترحيب العضو في موقعنا على الانترنت! يرجى إدخال اسم المستخدم و كلمة المرور الخاصة بك</p>
+        </div>
+        <div id="#2" class="tab-pane fade">
+            <h3> صفحة الطبيب</h3>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <form role="form">
+            <div class="form-group">
+                <center><label for="inputdefault"> :اسم المستخدم </label></center>
+                <center><input class="form-control" id="inputdefault" type="text"></center>
+            </div>
+            <div class="form-group">
+                <center><label for="inputlg">كلمه السر</label></center>
+                <center><input class="form-control input-lg" id="inputlg" type="text"></center>
+            </div>
+
+
+    </div>
+
+
+</body>
+
+<style>
+    .glyphicon {
+        left: 20px;
+        top: 10px;
+        font-size: 30px;
+    }
+
+    .form-control {
+        align: center;
+        width: 15%;
+        height: 3%;
+    }
+
+    .dropdown {
+        color: #555;
+        margin: 3px -22px 0 0;
+        width: 143px;
+        position: relative;
+        height: 17px;
+        text-align: left;
+    }
+
+    .submenu {
+        background: #fff;
+        position: absolute;
+        top: -12px;
+        left: -20px;
+        z-index: 100;
+        width: 135px;
+        display: none;
+        margin-left: 10px;
+        padding: 40px 0 5px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    }
+
+    .dropdown li a {
+        color: #555555;
+        display: block;
+        font-family: arial;
+        font-weight: bold;
+        padding: 6px 15px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+        .dropdown li a:hover {
+            background: #155FB0;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+    a.account {
+        font-size: 11px;
+        line-height: 16px;
+        color: #555;
+        position: absolute;
+        z-index: 110;
+        display: block;
+        padding: 11px 0 0 20px;
+        height: 28px;
+        width: 121px;
+        margin: -11px 0 0 -10px;
+        text-decoration: none;
+        background: url(icons/arrow.png) 116px 17px no-repeat;
+        cursor: pointer;
+    }
+
+    .root {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        font-size: 11px;
+        padding: 11px 0 0 0px;
+        border-top: 1px solid #dedede;
+    }
+
+    .navbar-default {
+        background-color: lightblue;
+        border-color: lightblue;
+    }
+</style>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js
+"></script>;
+<script type="text/javascript">
+$(document).ready(function()
+{
+
+$(".account").click(function()
+{
+var X=$(this).attr('id');
+if(X==1)
+{
+$(".submenu").hide();
+$(this).attr('id', '0');
+}
+else
+{
+$(".submenu").show();
+$(this).attr('id', '1');
+}
+
+});
+
+//Mouse click on sub menu
+$(".submenu").mouseup(function()
+{
+return false
+});
+
+//Mouse click on my account link
+$(".account").mouseup(function()
+{
+return false
+});
+
+
+//Document Click
+$(document).mouseup(function()
+{
+$(".submenu").hide();
+$(".account").attr('id', '');
+});
+});
+</script>
+
+</html>
