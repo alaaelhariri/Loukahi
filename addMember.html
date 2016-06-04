@@ -1,11 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html dir='rtl'>
     <head>
      <meta charset='utf-8'>
      <meta http-equiv="Content-type" Content="text/html; charset=utf-8">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
     <title></title>
     </head>
     <body>
-    Test change
+ 
+    <form role="form">
+    <div class="form-group">
+        <label for="UNn">  رقم UN:</label>
+        <input type="text" class="form-control" id="UNn">
+    </div>
+    
+    <button id="UNnUnavailable" class="btn"> لا يوجد رقم</button>
+    
+    <div id="regiterChild">
+    <div class="form-group">
+        <label for="name">  الأسم الثلاثي:</label>
+        <input type="text" class="form-control" id="name">
+    </div>
+    
+    <div class="form-group">
+        <label for="age">العمر:</label>
+        <input type="text" class="form-control" id="age">
+    </div>
+    
+      <div class="form-group">
+        الجنس:
+            <label class="radio-inline"> ذكر <input type="radio" name="optradio"></label>
+            <label class="radio-inline"><input type="radio" name="optradio">أنثى</label>
+        </div>
+
+    <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    </div>
+    <!--Scripts-->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
