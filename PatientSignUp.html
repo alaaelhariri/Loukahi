@@ -3,21 +3,60 @@
 	<head>
 		<title> </title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		    <link rel="stylesheet" href="headerStyle.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="headerStyle.css">
+		<link rel="stylesheet" href="Style.css">
 	</head>
 	<body>
+	
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+
+				<div class="container-fluid">
+					<div class="dropdown">
+						<a class="account"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+						<div class="submenu">
+							<ul class="root">
+								<li><a href="#Dashboard">Note1</a></li>
+								<li><a href="#Profile">Note2</a></li>
+								<li><a href="#settings">Note3</a></li>
+								<li><a href="#feedback">Note3</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</ul>
+
+
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">اتصال</a></li>
+				<li><a href="#">معلومات</a></li>
+				<li><a href="#">الصفحة الرئيسية</a></li>
+				<li><a href="#">عنوان</a></li>
+			</ul>
+
+		</nav>
 		<div class = "container">
-			<form action="KidsInformation.html">
-				<p>تسجيل</p>
-				الاسم الثلاثي <input type = "text"></input><br><br>
-				اسم المستخدم <input type = "text"></input><br><br>
-				رقم UN <input type = "text" name= "unNumber" ></input><br><br>
-				كلمة السر <input type = "password"></input><br><br>
-				تاكيد كلمة السر <input type = "password"></input><br><br>
+			<form action="KidsInformation.html" method="post">
+				<legend>تسجيل</legend>
+				<div class="form-group">
+					الاسم الثلاثي <input type = "text" class="form-control" name="fullName" required></input>
+				</div>
+				<div class="form-group">
+					اسم المستخدم <input type = "text"class="form-control" required></input>
+				</div>
+				<div class="form-group">
+					رقم UN <input type = "text" name= "unNumber" class="form-control" required></input>
+				</div>
+				<div class="form-group">
+					كلمة السر <input type = "password" name="password" class="form-control" required></input>
+				</div>
+				<div class="form-group">
+					تاكيد كلمة السر <input type = "password" name="confirmPass" class="form-control" required></input>
+				</div>
 				<button type="submit">تسجيل </button>
 			</form>
 		</div>
