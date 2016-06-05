@@ -3,16 +3,34 @@
 	<head>
 		<title> </title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="headerStyle.css">
+		<link rel="stylesheet" href="Style.css" >
+		<style type="text/css"></style>
 	</head>
 	<body>
-		<form action="Physician.html">
-			<p>تسجيل</p>
-			الاسم الثلاثي <input type = "text"></input><br><br>
-			اسم المركز <input type = "text"></input><br><br>
-			البريد الالكتروني <input type = "text" name= "unNumber" ></input><br><br>
-			كلمة السر <input type = "password"></input><br><br>
-			تاكيد كلمة السر <input type = "password"></input><br><br>
-			<button type="submit">تسجيل </button>
-		</form>
+		<div class="container">
+			<form action="Physician.html">
+				<legend>تسجيل</legend>
+				<div class="form-group">
+					الاسم الثلاثي <input type="text" class="form-control"></input>
+				</div>
+				<div class="form-group">
+					اسم المركز <input type="text" class="form-control"></input>
+				</div>
+				<div class="form-group">
+					البريد الالكتروني <input type="text" name= "unNumber" class="form-control"></input>
+				</div>
+				<div class="form-group">
+					كلمة السر <input type="password" class="form-control"></input>
+				</div>
+				<div class="form-group">
+					تاكيد كلمة السر <input type="password" class="form-control"></input>
+				</div>
+				<button type="submit" class="btn btn-primary">تسجيل </button>
+			</form>
+		</div>
 	</body>
 </html>
