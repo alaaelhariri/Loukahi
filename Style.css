@@ -1,6 +1,6 @@
 body {
 	font-family: 'Droid Arabic Naskh', serif;
-	font-size: 15px;
+	font-size: 20px;
 
 }
 
@@ -52,9 +52,30 @@ body {
     margin-left: -15em;
 }
 
+#information {
+	margin:20px;
+}
+
+.header{
+	font-family: 'Noto Sans Gurmukhi UI', sans-serif;
+	background-color:lightblue;
+	text-align: center;
+}
+
+footer {
+    background-color:lightblue;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px; 
+}
+
 .btn-primary{
 	background-color:lightblue;
 	border-color:lightblue;
+	font-size:20px;
+	margin-top:5px;
+	margin-right:5px;
 }
 a{
 	text-decoration: none;
