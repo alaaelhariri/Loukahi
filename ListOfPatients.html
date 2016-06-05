@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html dir='rtl' lang='ar'>
+<head>
+<meta http-equiv = "Content-Type" content = "text/html; charset=utf-8">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="logo.png" type="image/gif" rel="shortcut icon" />
+<title>لائحة المرضى </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+$( document ).ready(function() {
+  $('#s').keyup(function(){
+   var valThis = $(this).val().toLowerCase();
+    $('.countryList>li').each(function(){
+     var text = $(this).text().toLowerCase();
+        (text.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();            
+   });
+  });
+});
+</script>
+</head>
+<body>
+<div class="container" style="margin-left: auto;margin-right: auto;width: 200px;">
+<h1>لائحة المرضى </h1>
+  <input placeholder="بحث... " id="s" type="search" /> 
+  <br />
+  <ul class="countryList">
+	  <li><a href="#2">Ali kalach</a></li>
+	  <li><a href="#5">Ali El-hajj</a></li>
+      <li><a href="#9">Ali Rkein</a></li>
+	  <li><a href="#9">Ahmad Moen</a></li>
+      <li><a href="#4">Assem Elshekh</a></li>
+      <li><a href="#6">Abbas Htet</a></li>
+	  <li><a href="profile.php">Kareem yazbeck</a></li>
+      <li><a href="#7">Mira yehya</a></li>
+      <li><a href="#8">Mira elisar</a></li>
+	  <li><a href="#1">Mohammad Ismail</a></li>
+      <li><a href="#9">Mohamamd Kabalan</a></li>
+      <li><a href="#9">Nadine Najem</a></li>
+	   <li><a href="#2">Kareen kalach</a></li>
+	  <li><a href="#5">Elisar-hajj</a></li>
+      <li><a href="#9">Ali Rkein</a></li>
+      <li><a href="#7">Mira yehya</a></li>
+      <li><a href="#8">Mira elisar</a></li>
+	  <li><a href="#1">Mohammad Ismail</a></li>
+      <li><a href="#9">Mohamamd Kabalan</a></li>
+      <li><a href="#9">Nadine Najem</a></li>
+	  
+	  
+  </ul>
+</div>
+</body>
+</html>
